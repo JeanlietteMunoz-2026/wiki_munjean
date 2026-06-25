@@ -1,4 +1,10 @@
 import ActiveDirectory from './components/ActiveDirectory.jsx'
+import Cliente from './components/Cliente.jsx'
+import Gpo from './components/Gpo.jsx'
+import Inicio from './components/Inicio.jsx'
+import Instalacion from './components/Instalacion.jsx'
+import Prompts from './components/Prompts.jsx'
+import ServiciosRed from './components/ServiciosRed.jsx'
 import { Server, BookOpen } from 'lucide-react'
 function App() {
 return (
@@ -18,6 +24,12 @@ TI3V35 — Sistemas Operativos
 </header>
 <main className="flex-1 max-w-4xl mx-auto px-6 py-12">
 <ActiveDirectory />
+<Cliente/>
+<Gpo/>
+<Inicio/>
+<Instalacion/>
+<Prompts/>
+<ServiciosRed/>
 <div className="bg-white rounded-lg shadow p-8">
 <div className="flex items-center gap-3 mb-4">
 <BookOpen className="text-slate-700" />
