@@ -1,3 +1,4 @@
+import ActiveDirectory from './components/ActiveDirectory'
 import { Server, BookOpen } from 'lucide-react'
 function App() {
 return (
@@ -16,6 +17,7 @@ TI3V35 — Sistemas Operativos
 </div>
 </header>
 <main className="flex-1 max-w-4xl mx-auto px-6 py-12">
+<ActiveDirectory />
 <div className="bg-white rounded-lg shadow p-8">
 <div className="flex items-center gap-3 mb-4">
 <BookOpen className="text-slate-700" />
