@@ -1,4 +1,4 @@
-import ActiveDirectory from './components/ActiveDirectory'
+import ActiveDirectory from './components/ActiveDirectory.jsx'
 import { Server, BookOpen } from 'lucide-react'
 function App() {
 return (
