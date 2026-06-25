@@ -1,4 +1,4 @@
-import { Server, BookOpen } from ’lucide-react’
+import { Server, BookOpen } from 'lucide-react'
 function App() {
 return (
 <div className="min-h-screen bg-slate-50 flex flex-col">
