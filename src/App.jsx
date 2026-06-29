@@ -1,11 +1,13 @@
-import ActiveDirectory from './components/ActiveDirectory.jsx'
-import Cliente from './components/Cliente.jsx'
-import Gpo from './components/Gpo.jsx'
-import Inicio from './components/01_Inicio.jsx'
-import Instalacion from './components/Instalacion.jsx'
-import Prompts from './components/Prompts.jsx'
-import ServiciosRed from './components/ServiciosRed.jsx'
+import React from 'react'
 import { Server, BookOpen } from 'lucide-react'
+
+import Inicio from './components/01_Inicio.jsx'
+import Instalacion from './components/02_Instalacion.jsx'
+import ActiveDirectory from './components/03_ActiveDirectory.jsx'
+import Cliente from './components/04_Cliente.jsx'
+import ServiciosRed from './components/05_ServiciosRed.jsx'
+import Gpo from './components/06_Gpo.jsx'
+import Prompts from './components/07_Prompts.jsx'
 function App() {
 return (
 <div className="min-h-screen bg-slate-50 flex flex-col">
@@ -22,14 +24,6 @@ TI3V35 — Sistemas Operativos
 </div>
 </div>
 </header>
-<main className="flex-1 max-w-4xl mx-auto px-6 py-12">
-<ActiveDirectory />
-<Cliente/>
-<Gpo/>
-<Inicio/>
-<Instalacion/>
-<Prompts/>
-<ServiciosRed/>
 <div className="bg-white rounded-lg shadow p-8">
 <div className="flex items-center gap-3 mb-4">
 <BookOpen className="text-slate-700" />
@@ -43,6 +37,15 @@ Cada criterio (2.1.1 a 2.1.5) se incorpora como un
 componente en el menú superior.
 </p>
 </div>
+
+<main className="flex-1 max-w-4xl mx-auto px-6 py-12">
+<Inicio/>
+<Instalacion/>
+<ActiveDirectory />
+<Cliente/>
+<ServiciosRed/>
+<Gpo/>
+<Prompts/>
 </main>
 <footer className="bg-slate-100 text-slate-600 text-sm py-4 px-6">
 <div className="max-w-4xl mx-auto flex justify-between">
@@ -53,4 +56,4 @@ componente en el menú superior.
 </div>
 )
 }
-export default App
+export default App  

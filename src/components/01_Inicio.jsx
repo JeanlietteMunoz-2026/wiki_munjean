@@ -12,7 +12,6 @@ export default function Inicio() {
                 </pre>
             ) : (
                 <ul>
-                    <li>WIP - Contenido próximamente</li>
                 </ul>
             )}
         </div>
