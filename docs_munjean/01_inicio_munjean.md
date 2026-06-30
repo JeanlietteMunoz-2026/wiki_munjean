@@ -1,18 +1,29 @@
-# Inicio - Evaluación Sumativa N°2
 
-## Propósito General
+# 01. Inicio — Evaluación Sumativa N°2
 
-Esta evaluación sumativa N°2 está enfocada en la correcta administración del servidor y en la claridad de la documentación. El objetivo principal es validar que todos los procedimientos realizados estén debidamente documentados, justificados y respaldados con evidencia visual.
+## Propósito general
 
-## Objetivos de la Evaluación
+Esta evaluación sumativa N°2 se centra en la correcta administración del servidor y en la calidad de la documentación. El objetivo es que todos los procedimientos estén explicados, justificados y respaldados con evidencia visual consistente.
 
-- Administración Efectiva del Servidor: Verificar que se hayan implementado correctamente todos los procedimientos y configuraciones de servidor.
-- Documentación Clara y Precisa: Asegurar que cada acción realizada esté explicada detalladamente.
-- Justificación de Procedimientos: Entender y documentar el propósito y la razón de cada configuración.
-- Evidencia Visual: Proporcionar capturas de pantalla que respalden cada paso ejecutado.
+## Objetivos de la evaluación
 
+- Administración efectiva del servidor: Verificar implementaciones y configuraciones.
+- Documentación clara y precisa:  Explicar cada acción realizada.
+- Justificación de procedimientos: Documentar el porqué de cada configuración.
+- Evidencia visual: Incluir capturas representativas y uniformes.
 
 ## Aprendizaje esperado
 
-- Despliegue, configuración y gestión de objetivos del dominio en Windows Server.
+- Despliegue, configuración y gestión de dominios en Windows Server.
+
+---
+
+<figure style="text-align:center;margin:24px 0;">
+	<img src="/img_munjean/hero_pastel.svg" alt="Hero pastel — Wiki Windows Server" style="max-width:900px;width:100%;height:auto;border-radius:12px;" />
+	<figcaption style="color:#6e2a5c;margin-top:8px;font-weight:600;">Wiki — Windows Server (paleta pastel)</figcaption>
+</figure>
+
+
+
+
 

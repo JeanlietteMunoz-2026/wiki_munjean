@@ -1,28 +1,52 @@
-04.- Cliente dominio.  (criterio 2.1.3)
 
-Incorporación al dominio
-Creación de la máquina virtual: Configurar una VM llamada PC01 conectada a la Red interna "redlab".
-[(./docs_munjean/](img_munjean/PASO_E/E.14.2.png)
+# 04. Cliente dominio (Criterio 2.1.3)
 
-Sistema Operativo: Instalar Windows 10 Pro configurando inicialmente una cuenta de usuario local.
-[(./docs_munjean/](img_munjean/PASO_E/E.14.6.png)
+Esta sección documenta la incorporación de un equipo cliente (PC01) al dominio <strong>inacap.local</strong>.
 
-Verificación de red: Abrir la consola CMD y usar el comando ipconfig para confirmar que el equipo recibió una IP del rango DHCP.
-[(./docs_munjean/](img_munjean/PASO_D/D.13.01.png)
+## Creación y configuración de la VM cliente
 
-Verificación de DNS: Confirmar en la consola que el equipo tiene asignado el DNS 192.168.10.10.
-[(./docs_munjean/](img_munjean/PASO_D/D.13.1.png)
+Se creó la VM llamada PC01 y se conectó a la red interna <em>redlab</em>.
 
-Sincronización: Comprobar que la fecha y la hora del cliente son exactamente iguales a las del servidor para evitar fallos de credenciales.
-[(./docs_munjean/](img_munjean/PASO_C/C.10.0.png) 
+<figure>
+	<img src="/img_munjean/PASO_E/E.14.2.png" srcset="/img_munjean/optimized/PASO_E/E.14.2-800.webp 800w, /img_munjean/optimized/PASO_E/E.14.2-400.webp 400w, /img_munjean/PASO_E/E.14.2.png 1600w" sizes="(max-width:900px) 100vw, 900px" loading="lazy" alt="VM PC01 conectada a redlab" style="max-width:900px;width:100%;height:auto;border-radius:8px;" />
+	<figcaption>VM PC01 conectada a la red interna <em>redlab</em>.</figcaption>
+</figure>
 
-Unión al dominio: Ejecutar sysdm.cpl y modificar la configuración para unirse al dominio "inacap.local".
-[(./docs_munjean/](img_munjean/PASO_E/E.17.dominio2.png)
+## Sistema operativo y verificación de red
 
-Autenticación: Validar el proceso ingresando las credenciales del usuario INACAP\Administrador.
-[(./docs_munjean/](img_munjean/PASO_C/C.10.0.png)
+Instalación de Windows 10 Pro y comprobación de conectividad con `ipconfig`.
 
-Inicio de sesión en dominio: Reiniciar la máquina virtual e ingresar con la cuenta de dominio creada con tu código personal.
-[(./docs_munjean/](img_munjean/PASO_C/C.10.0.png)
+<figure>
+	<img src="/img_munjean/PASO_E/E.14.6.png" srcset="/img_munjean/optimized/PASO_E/E.14.6-800.webp 800w, /img_munjean/optimized/PASO_E/E.14.6-400.webp 400w, /img_munjean/PASO_E/E.14.6.png 1600w" sizes="(max-width:900px) 100vw, 900px" loading="lazy" alt="Instalación Windows 10 Pro" style="max-width:900px;width:100%;height:auto;border-radius:8px;" />
+	<figcaption>Instalación inicial de Windows 10 Pro en PC01.</figcaption>
+</figure>
+
+<figure>
+	<img src="/img_munjean/PASO_D/D.13.01.png" srcset="/img_munjean/optimized/PASO_D/D.13.01-800.webp 800w, /img_munjean/optimized/PASO_D/D.13.01-400.webp 400w, /img_munjean/PASO_D/D.13.01.png 1600w" sizes="(max-width:900px) 100vw, 900px" loading="lazy" alt="Salida ipconfig en cliente" style="max-width:900px;width:100%;height:auto;border-radius:8px;" />
+	<figcaption>Salida de `ipconfig` mostrando asignación de IP.</figcaption>
+</figure>
+
+## DNS y sincronización
+
+Verificar que el cliente recibe DNS apuntando al servidor (192.168.10.10) y que la hora está sincronizada.
+
+<figure>
+	<img src="/img_munjean/PASO_D/D.13.1.png" srcset="/img_munjean/optimized/PASO_D/D.13.1-800.webp 800w, /img_munjean/optimized/PASO_D/D.13.1-400.webp 400w, /img_munjean/PASO_D/D.13.1.png 1600w" sizes="(max-width:900px) 100vw, 900px" loading="lazy" alt="Verificación DNS" style="max-width:900px;width:100%;height:auto;border-radius:8px;" />
+	<figcaption>Confirmación de configuración DNS apuntando al servidor.</figcaption>
+</figure>
+
+## Unión al dominio
+
+Unir el equipo al dominio usando `sysdm.cpl` y autenticarse con una cuenta de administrador de dominio.
+
+<figure>
+	<img src="/img_munjean/PASO_E/E.17.dominio.2.png" srcset="/img_munjean/optimized/PASO_E/E.17.dominio.2-800.webp 800w, /img_munjean/optimized/PASO_E/E.17.dominio.2-400.webp 400w, /img_munjean/PASO_E/E.17.dominio.2.png 1600w" sizes="(max-width:900px) 100vw, 900px" loading="lazy" alt="Unión al dominio inacap.local" style="max-width:900px;width:100%;height:auto;border-radius:8px;" />
+	<figcaption>Proceso de unión del equipo al dominio <em>inacap.local</em>.</figcaption>
+</figure>
+
+<figure>
+	<img src="/img_munjean/PASO_C/C.10.0.png" srcset="/img_munjean/optimized/PASO_C/C.10.0-800.webp 800w, /img_munjean/optimized/PASO_C/C.10.0-400.webp 400w, /img_munjean/PASO_C/C.10.0.png 1600w" sizes="(max-width:900px) 100vw, 900px" loading="lazy" alt="Inicio de sesión en dominio" style="max-width:900px;width:100%;height:auto;border-radius:8px;" />
+	<figcaption>Inicio de sesión en el dominio con la cuenta creada.</figcaption>
+</figure>
 
 

@@ -1,20 +1,31 @@
-import gpoContent from '../../docs_munjean/06_gpo_munjean.md?raw';
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import { Network } from 'lucide-react'
+import gpoContent from '../../docs_munjean/06_gpo_munjean.md?raw'
 
 export default function Gpo() {
-    const hasContent = gpoContent && gpoContent.trim().length > 0;
-    
-    return (
-        <div>
-            <h1>GPO</h1>
-            {hasContent ? (
-                <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
-                    {gpoContent}
-                </pre>
-            ) : (
-                <ul>
-                    <li>WIP - Contenido próximamente</li>
-                </ul>
-            )}
+  const hasContent = gpoContent && gpoContent.trim().length > 0
+
+  return (
+    <section className="markdown md-container py-6">
+      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/40">
+        <div className="flex items-center gap-3 mb-6">
+          <Network className="h-6 w-6 text-sky-500" />
+          <div>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">06 — GPO</p>
+            <h2 className="text-2xl font-semibold text-slate-900">GPO</h2>
+          </div>
         </div>
-    );
+
+        {hasContent ? (
+          <article className="prose prose-slate mx-auto">
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{gpoContent}</ReactMarkdown>
+          </article>
+        ) : (
+          <p className="text-slate-600">WIP - Contenido próximamente</p>
+        )}
+      </div>
+    </section>
+  )
 }

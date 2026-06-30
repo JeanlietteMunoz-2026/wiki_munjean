@@ -1,20 +1,31 @@
-import clienteContent from '../../docs_munjean/04_cliente_dominio_munjean.md?raw';
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import { Network } from 'lucide-react'
+import clienteContent from '../../docs_munjean/04_cliente_dominio_munjean.md?raw'
 
 export default function Cliente() {
-    const hasContent = clienteContent && clienteContent.trim().length > 0;
-    
-    return (
-        <div>
-            <h1>Cliente Dominio</h1>
-            {hasContent ? (
-                <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
-                    {clienteContent}
-                </pre>
-            ) : (
-                <ul>
-                    <li>WIP - Contenido próximamente</li>
-                </ul>
-            )}
+  const hasContent = clienteContent && clienteContent.trim().length > 0
+
+  return (
+    <section className="markdown md-container py-6">
+      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/40">
+        <div className="flex items-center gap-3 mb-6">
+          <Network className="h-6 w-6 text-sky-500" />
+          <div>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">04 — Cliente</p>
+            <h2 className="text-2xl font-semibold text-slate-900">Cliente Dominio</h2>
+          </div>
         </div>
-    );
+
+        {hasContent ? (
+          <article className="prose prose-slate mx-auto">
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{clienteContent}</ReactMarkdown>
+          </article>
+        ) : (
+          <p className="text-slate-600">WIP - Contenido próximamente</p>
+        )}
+      </div>
+    </section>
+  )
 }

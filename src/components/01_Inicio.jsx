@@ -1,19 +1,31 @@
-import inicioContent from '../../docs_munjean/01_inicio_munjean.md?raw';
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import { Network } from 'lucide-react'
+import inicioContent from '../../docs_munjean/01_inicio_munjean.md?raw'
 
 export default function Inicio() {
-    const hasContent = inicioContent && inicioContent.trim().length > 0;
-    
-    return (
-        <div>
-            <h1>Inicio</h1>
-            {hasContent ? (
-                <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
-                    {inicioContent}
-                </pre>
-            ) : (
-                <ul>
-                </ul>
-            )}
+  const hasContent = inicioContent && inicioContent.trim().length > 0
+
+  return (
+    <section className="markdown md-container py-6">
+      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/40">
+        <div className="flex items-center gap-3 mb-6">
+          <Network className="h-6 w-6 text-sky-500" />
+          <div>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">01 — Inicio</p>
+            <h2 className="text-2xl font-semibold text-slate-900">Inicio</h2>
+          </div>
         </div>
-    );
+
+        {hasContent ? (
+          <article className="prose prose-slate mx-auto">
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{inicioContent}</ReactMarkdown>
+          </article>
+        ) : (
+          <p className="text-slate-600">Contenido no disponible.</p>
+        )}
+      </div>
+    </section>
+  )
 }
