@@ -6,13 +6,13 @@ Esta evaluación sumativa N°2 está enfocada en la correcta administración del
 
 ## Objetivos de la Evaluación
 
-- **Administración Efectiva del Servidor**: Verificar que se hayan implementado correctamente todos los procedimientos y configuraciones de servidor.
-- **Documentación Clara y Precisa**: Asegurar que cada acción realizada esté explicada detalladamente.
-- **Justificación de Procedimientos**: Entender y documentar el propósito y la razón de cada configuración.
-- **Evidencia Visual**: Proporcionar capturas de pantalla que respalden cada paso ejecutado.
+- Administración Efectiva del Servidor: Verificar que se hayan implementado correctamente todos los procedimientos y configuraciones de servidor.
+- Documentación Clara y Precisa: Asegurar que cada acción realizada esté explicada detalladamente.
+- Justificación de Procedimientos: Entender y documentar el propósito y la razón de cada configuración.
+- Evidencia Visual: Proporcionar capturas de pantalla que respalden cada paso ejecutado.
 
 
 ## Aprendizaje esperado
 
-- **Despliegue, configuración y gestión de objetivos del dominio en Windows Server.
+- Despliegue, configuración y gestión de objetivos del dominio en Windows Server.
 

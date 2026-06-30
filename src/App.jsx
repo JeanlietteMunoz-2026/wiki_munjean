@@ -3,7 +3,7 @@ import { Server, BookOpen } from 'lucide-react'
 
 import Inicio from './components/01_Inicio.jsx'
 import Instalacion from './components/02_Instalacion.jsx'
-import ActiveDirectory from './components/03_ActiveDirectory.jsx'
+import ActiveDirectory from './components/activeDirectory.jsx'
 import Cliente from './components/04_Cliente.jsx'
 import ServiciosRed from './components/05_ServiciosRed.jsx'
 import Gpo from './components/06_Gpo.jsx'
